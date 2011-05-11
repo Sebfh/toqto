@@ -1,4 +1,5 @@
 Toqto::Application.routes.draw do
+  resources :messages, :users
   
   match "/"      => "home#index", :as => 'home_index'
   match "/about" => "home#about", :as => 'home_about'
