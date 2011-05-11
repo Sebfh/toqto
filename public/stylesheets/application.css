@@ -178,3 +178,9 @@ div.recommendation-description
 {
 	margin-bottom: 10px;
 }
+div#user_nav a#home {
+	float: left; height: 30px; width: 130px; margin-top: 15px;
+}
+div#map {
+	height: 200px; width:100%; 
+}
