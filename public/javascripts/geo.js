@@ -8,19 +8,37 @@ function success(position) {
 	    mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
 	var map = new google.maps.Map(document.getElementById("map"), myOptions);
+	
+	$.get('/messages.xml', function(data) {
+		$(data).find('message').each(function(){
+			var mess_id = $(this).find('id').text();
+			var mess_content = $(this).find('content').text();
+			var lat = $(this).find('lat').text();
+			var lon = $(this).find('long').text();
 
+			//alert(mess_id + '|' + mess_content)
+			var latlng = new google.maps.LatLng(lat, lon);
+			var marker = new google.maps.Marker({
+			    position: latlng, 
+			    map: map, 
+			    title:mess_content,
+				message_id: mess_id,
+				icon: '/images/heart.png'
+			});
+			
+			google.maps.event.addListener(marker, 'click', function() {
+				showMessage(marker.message_id);
+			});
+		});
+	}, 'xml');
+	
 	var marker = new google.maps.Marker({
 	    position: latlng, 
 	    map: map, 
 	    title:"You are here!",
-		message_id: "123"
+		message_id: "123",
+		icon: '/images/bullet_blue.png'
 	});
-		
-	google.maps.event.addListener(marker, 'click', function() {
-		alert(marker.message_id);
-	});
-		
-	
 }
 function error(msg) {
   alert(msg)
