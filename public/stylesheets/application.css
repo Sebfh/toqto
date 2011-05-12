@@ -1,0 +1,186 @@
+body {
+	margin: 0;
+	font-family: helvetica, arial;
+	background-color: #F1F1F1;
+}
+a {
+	color: #0084BD;
+	text-decoration: none;
+}
+h1 {
+	margin: 0;
+	padding: 0;
+}
+h1.rec-title
+{
+	font-size: 26px;
+}
+div#user_nav {
+	width: 100%;
+	background: url("/images/toqto-banner.png") no-repeat fixed 0 0 #BE1919;
+	height: 54px;
+}
+div#current_user {
+	padding:5px;
+	height:44px;
+}
+div#nav_bar {
+	height: 5px;
+	background-color: #dedede;
+	clear: both;
+}
+img.profile-image {
+
+	float:right;
+	border-radius: 5px 5px 5px 5px;
+    float: right;
+    height: 44px;
+}
+span.signout {
+	float:right;
+	padding:5px;
+}
+div#current_user .current-username {
+	color: #0084BD;
+	text-decoration: none;
+	
+	font-size: 18px;
+	font-weight: bold;
+}
+div#flash_notice {
+	color:#666666;
+	padding: 5px;
+	text-align: center;
+	background-color: #FFF967;
+	border-bottom: 5px solid #FFFE9A;
+	display: none;
+}
+div.securely-login
+{
+	padding: 10px;
+    text-align: center;
+	height: 34px;
+}
+div#profile_info
+{
+	background: none repeat scroll 0 0 #DEDEDE;
+    clear: both;
+    display: block;
+    float: left;
+    width: 100%;
+}
+div#content
+{
+	padding:10px;
+	background-color: #fff;
+}
+span#current-user-fullname
+{
+	padding:5px;
+	float:left;
+}
+span.post-when
+{
+	float: right;
+	color: #AAAAAA;
+}
+div.post-item
+{
+	border-top: 1px solid #EBEBEB;
+	cursor: pointer;
+	clear: both;
+}
+div.post-item img.avatar {
+	float: left;
+    margin: 0 10px 10px 0;
+    width: 40px;
+	border-radius: 3px 3px 3px 3px;
+}
+img.avatar-small {
+    width: 26px;
+	border-radius: 3px 3px 3px 3px;
+}
+img.rec-avatar-small {
+	width: 26px;
+	border-radius: 3px 3px 3px 3px;
+	vertical-align: text-top;
+}
+div.post-item div.post-message
+{
+	padding: 10px 0;
+	clear: both;
+}
+div#footer {
+	border-top: 1px solid #EBEBEB;
+	text-align: center;
+	padding: 10px;
+	color: #AAAAAA;
+	background-color: #F1F1F1;
+}
+img.sclr-tag {
+	padding: 0px;
+	margin: 0 10px 0 0;
+	float: left;
+}
+textarea.post-area
+{
+	width: 96%;
+	padding: 5px;
+}
+input.rec-text
+{
+	width: 96%;
+	padding: 5px;
+}
+p.people-found {
+	margin-top: 0px;
+	color: #AAAAAA;
+}
+p.thumb-count {
+	margin: 0px;
+	color: #AAAAAA;
+}
+p.spread-word {
+	color: #AAAAAA;
+}
+div.field {
+	padding: 0px 0px 10px 0px;
+}
+ul.tabs { 
+	list-style: none; 
+}
+ul.tabs li { display: inline; }
+ul.tabs li span { 
+	color: #aaaaaa;
+    background: none repeat scroll 0 0 #F1F1F1;
+    border: 1px solid #EBEBEB;
+    display: block;
+    float: left;
+    left: -40px;
+    margin-bottom: -1px;
+    margin-left: 5px;
+    padding: 4px 10px;
+    position: relative;
+    text-decoration: none;
+}
+ul.tabs li span.active
+{
+	color: #444;
+	border-bottom: 1px solid #fff;
+	background-color: #fff;
+}
+/* ul.tabs li a:hover { background: #ccc; } */
+div#rec-users {
+	margin: 0;
+	padding:5px 0;
+}
+div.recommendation-description
+{
+	margin-bottom: 10px;
+}
+div#user_nav a#home {
+	float: left; height: 30px; width: 130px; margin-top: 15px;
+}
+div#map {
+	height: 200px; width:100%; 
+}
