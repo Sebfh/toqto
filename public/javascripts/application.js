@@ -20,3 +20,7 @@ jQuery(function($) {
 		
 	}
 })
+//if it's an android then scroll to hide addressbar
+if(navigator.userAgent.match(/Android/i)){
+	window.scrollTo(0,1);
+}

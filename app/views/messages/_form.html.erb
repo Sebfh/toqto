@@ -1,0 +1,21 @@
+<% form_for(@message) do |f| %>
+	<% if @message.errors.any? %>
+	<% end %>
+	
+	<div class="field">
+    	<%= f.label "Message" %><br />
+    	<%= f.text_area :content, :rows => 5, :class => 'post-area' %>
+  	</div>
+	<div class="field" style="display:none;">
+    	<%= f.label "Lat" %><br />
+    	<%= f.hidden_field :lat, :class => 'rec-text' %>
+  	</div>
+	<div class="field" style="display:none;">
+    	<%= f.label "Long" %><br />
+    	<%= f.hidden_field :long, :class => 'rec-text' %>
+  	</div>
+  	<div class="actions">
+    	<%= f.submit "Post Flirt" %> or <%= link_to 'cancel', home_index_path() %>
+  	</div>
+	
+<% end %>

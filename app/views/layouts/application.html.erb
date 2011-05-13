@@ -6,7 +6,7 @@
   <%= javascript_include_tag :defaults, "https://maps.google.com/maps/api/js?sensor=true&language=en&region=NL" %>
   <%= csrf_meta_tag %>
   <%= yield(:head) %>
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=1;">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-touch-fullscreen" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -23,6 +23,17 @@
 		<% end %>
 		<div id="content">
 			<%= yield %>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
 		</div>	
 		<%= render 'shared/footer' %>
 	</div>
