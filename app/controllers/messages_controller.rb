@@ -29,7 +29,7 @@ class MessagesController < ApplicationController
   
   def create
     @message = Message.new(params[:message])
-    @user = User.find_by_name("Seb")
+    @user = User.find_by_name("Somebody")
     @message.sender = @user
     
     respond_to do |format|
